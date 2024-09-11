@@ -4,6 +4,7 @@ import jakarta.persistence.*
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotNull
 import java.time.LocalDateTime
+import java.util.*
 
 
 @Entity
@@ -11,9 +12,8 @@ import java.time.LocalDateTime
 class Todo {
 
     @Id
-    @GeneratedValue(generator = "task_uuid", strategy = GenerationType.UUID)
-    @SequenceGenerator(name = "task_uuid", sequenceName = "task_uuid",allocationSize = 1)
-    val id: Long = 0
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    val id: UUID? = null
 
     @Column(name = "createdAt", nullable = false)
     val createdAt: LocalDateTime = LocalDateTime.now()
