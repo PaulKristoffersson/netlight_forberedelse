@@ -16,7 +16,7 @@ class Todo {
     val id: Long = 0
 
     @Column(name = "createdAt", nullable = false)
-    var createdAt: LocalDateTime = LocalDateTime.now()
+    val createdAt: LocalDateTime = LocalDateTime.now()
 
     @Column(name = "updatedAt", nullable = false)
     var updatedAt: LocalDateTime = LocalDateTime.now()
