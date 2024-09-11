@@ -3,12 +3,18 @@ package com.todo.todo_app.service
 import com.todo.todo_app.data.Todo
 import com.todo.todo_app.data.model.TodoCreateRequest
 import com.todo.todo_app.data.model.TodoDto
+import com.todo.todo_app.data.model.TodoUpdateRequest
+import com.todo.todo_app.exception.BadRequestException
 import com.todo.todo_app.exception.TodoNotFoundException
 import com.todo.todo_app.repository.TodoRepository
 import org.springframework.scheduling.config.Task
 import org.springframework.stereotype.Service
+import org.springframework.util.ReflectionUtils
+import java.lang.reflect.Field
 import java.util.*
 import java.util.stream.Collectors
+import kotlin.reflect.full.memberProperties
+import kotlin.reflect.jvm.javaField
 
 @Service
 class TodoService(private val repository: TodoRepository) {
@@ -44,4 +50,37 @@ class TodoService(private val repository: TodoRepository) {
 
     fun getAllTodos(): List<TodoDto> =
         repository.queryAllByRank().stream().map(this::mappingEntityToDto).collect(Collectors.toList())
+
+    fun createTodo(request: TodoCreateRequest): TodoDto {
+        if (repository.doesTitleExist(request.title)) {
+            throw BadRequestException("Title with description: ${request.title}, already exists.")
+        }
+        val todo = Todo()
+        mappingFromRequestToEntity(todo, request)
+        val savedTodo: Todo = repository.save(todo)
+        return mappingEntityToDto(savedTodo)
+    }
+
+    fun updateTodo(id: UUID, request: TodoUpdateRequest): TodoDto {
+        checkTodoForId(id)
+        val exisitingTodo = repository.findTodoById(id)
+
+        for (prop in TodoUpdateRequest::class.memberProperties) {
+            if (prop.get(request) != null) {
+                val field: Field? = ReflectionUtils.findField(Task::class.java, prop.name)
+                field?.let {
+                    it.isAccessible = true
+                    ReflectionUtils.setField(it, exisitingTodo, prop.get(request))
+                }
+            }
+        }
+        val savedTodo: Todo = repository.save(exisitingTodo)
+        return mappingEntityToDto(savedTodo)
+    }
+
+    fun deleteTask(id: UUID): String {
+        checkTodoForId(id)
+        repository.deleteById(id)
+        return "Task with ID: $id was deleted."
+    }
 }
