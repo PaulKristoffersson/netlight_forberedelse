@@ -78,9 +78,9 @@ class TodoService(private val repository: TodoRepository) {
         return mappingEntityToDto(savedTodo)
     }
 
-    fun deleteTask(id: UUID): String {
+    fun deleteTodo(id: UUID): String {
         checkTodoForId(id)
         repository.deleteById(id)
-        return "Task with ID: $id was deleted."
+        return "Todo with ID: $id was deleted."
     }
 }
