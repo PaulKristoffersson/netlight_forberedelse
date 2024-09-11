@@ -5,9 +5,6 @@ import java.time.LocalDateTime
 import java.util.UUID
 
 data class TodoCreateRequest(
-    @NotBlank(message = "Task id cannot be blank")
-    val id: UUID,
-
     @NotBlank(message = "Created at cannot be blank")
     val createdAt: LocalDateTime,
 
