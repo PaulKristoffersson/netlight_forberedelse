@@ -11,6 +11,7 @@ import org.springframework.scheduling.config.Task
 import org.springframework.stereotype.Service
 import org.springframework.util.ReflectionUtils
 import java.lang.reflect.Field
+import java.time.LocalDateTime
 import java.util.*
 import java.util.stream.Collectors
 import kotlin.reflect.full.memberProperties
@@ -30,10 +31,10 @@ class TodoService(private val repository: TodoRepository) {
     )
 
     private fun mappingFromRequestToEntity(todo: Todo, request: TodoCreateRequest) {
-        todo.updatedAt = request.updatedAt
         todo.title = request.title
         todo.description = request.description
         todo.rank = request.rank
+        todo.done = request.done
     }
 
     private fun checkTodoForId(id: UUID) {
@@ -74,7 +75,9 @@ class TodoService(private val repository: TodoRepository) {
                 }
             }
         }
+        exisitingTodo.updatedAt = LocalDateTime.now()
         val savedTodo: Todo = repository.save(exisitingTodo)
+
         return mappingEntityToDto(savedTodo)
     }
 

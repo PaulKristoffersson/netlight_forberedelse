@@ -3,6 +3,7 @@ package com.todo.todo_app.repository
 import com.todo.todo_app.data.Todo
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
+import org.springframework.data.repository.query.Param
 import org.springframework.stereotype.Repository
 import java.util.UUID
 
@@ -15,6 +16,6 @@ interface TodoRepository : JpaRepository <Todo, UUID> {
     @Query(value = "SELECT * FROM todo ORDER BY rank", nativeQuery = true)
     fun queryAllByRank(): List<Todo>
 
-    @Query("SELECT CASE WHEN COUNT(t) > 0 THEN TRUE ELSE FALSE END FROM Todo t WHERE t.title =? 1")
-    fun doesTitleExist(title: String): Boolean
+    @Query("SELECT CASE WHEN COUNT(t) > 0 THEN true ELSE false END FROM Todo t WHERE t.title = :title")
+    fun doesTitleExist(@Param("title") title: String): Boolean
 }

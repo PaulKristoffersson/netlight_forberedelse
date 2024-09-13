@@ -38,7 +38,7 @@ class TodoController (private val service: TodoService) {
         @Valid @RequestBody request: TodoUpdateRequest
     ): ResponseEntity<TodoDto> = ResponseEntity(service.updateTodo(id, request), HttpStatus.OK)
 
-    @DeleteMapping("todods/{id}")
+    @DeleteMapping("todos/{id}")
     fun deleteTodo(@PathVariable id: UUID): ResponseEntity<String> = ResponseEntity(service.deleteTodo(id), HttpStatus.OK)
 
 
