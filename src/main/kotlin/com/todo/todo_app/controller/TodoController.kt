@@ -41,5 +41,10 @@ class TodoController (private val service: TodoService) {
     @DeleteMapping("todos/{id}")
     fun deleteTodo(@PathVariable id: UUID): ResponseEntity<String> = ResponseEntity(service.deleteTodo(id), HttpStatus.OK)
 
+    @GetMapping("todos/completed")
+    fun getAllOpenTasks(): ResponseEntity<List<TodoDto>> = ResponseEntity(service.getAllCompletedTodos(), HttpStatus.OK)
+
+    @GetMapping("todos/uncompleted")
+    fun getAllClosedTasks(): ResponseEntity<List<TodoDto>> = ResponseEntity(service.getAllUncompletedTodos(), HttpStatus.OK)
 
 }

@@ -16,6 +16,12 @@ interface TodoRepository : JpaRepository <Todo, UUID> {
     @Query(value = "SELECT * FROM todo ORDER BY rank", nativeQuery = true)
     fun queryAllByRank(): List<Todo>
 
+    @Query(value = "SELECT * FROM todo WHERE done = TRUE", nativeQuery = true)
+    fun queryAllCompletedTodos(): List<Todo>
+
+    @Query(value = "SELECT * FROM todo WHERE done = FALSE", nativeQuery = true)
+    fun queryAllUncompletedTodos(): List<Todo>
+
     @Query("SELECT CASE WHEN COUNT(t) > 0 THEN true ELSE false END FROM Todo t WHERE t.title = :title")
     fun doesTitleExist(@Param("title") title: String): Boolean
 }

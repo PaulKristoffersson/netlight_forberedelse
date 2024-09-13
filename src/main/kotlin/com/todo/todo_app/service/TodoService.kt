@@ -52,6 +52,13 @@ class TodoService(private val repository: TodoRepository) {
     fun getAllTodos(): List<TodoDto> =
         repository.queryAllByRank().stream().map(this::mappingEntityToDto).collect(Collectors.toList())
 
+    fun getAllCompletedTodos(): List<TodoDto> =
+        repository.queryAllCompletedTodos().stream().map(this::mappingEntityToDto).collect(Collectors.toList())
+
+    fun getAllUncompletedTodos(): List<TodoDto> =
+        repository.queryAllUncompletedTodos().stream().map(this::mappingEntityToDto).collect(Collectors.toList())
+
+
     fun createTodo(request: TodoCreateRequest): TodoDto {
         if (repository.doesTitleExist(request.title)) {
             throw BadRequestException("Title with description: ${request.title}, already exists.")
