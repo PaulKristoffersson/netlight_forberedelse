@@ -815,3 +815,32 @@ INSERT INTO todo (`id`, `createdAt`, `updatedAt`, `title`, `description`, `rank`
 2024-09-13T17:12:38.658+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-13T17:12:38.676+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-09-13T17:12:38.684+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T17:29:54.817+02:00  INFO 44872 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : Starting TodoAppApplicationKt using Java 22.0.2 with PID 44872 (/Users/paulkristoffersson/IdeaProjects/todo_app/build/classes/kotlin/main started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T17:29:54.819+02:00  INFO 44872 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : The following 1 profile is active: "dev"
+2024-09-13T17:29:55.530+02:00  INFO 44872 --- [todo_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T17:29:55.575+02:00  INFO 44872 --- [todo_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-09-13T17:29:56.030+02:00  INFO 44872 --- [todo_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-09-13T17:29:56.045+02:00  INFO 44872 --- [todo_app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T17:29:56.046+02:00  INFO 44872 --- [todo_app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T17:29:56.095+02:00  INFO 44872 --- [todo_app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T17:29:56.095+02:00  INFO 44872 --- [todo_app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
+2024-09-13T17:29:56.254+02:00  INFO 44872 --- [todo_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T17:29:56.314+02:00  INFO 44872 --- [todo_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T17:29:56.348+02:00  INFO 44872 --- [todo_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T17:29:56.659+02:00  INFO 44872 --- [todo_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T17:29:56.693+02:00  INFO 44872 --- [todo_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T17:29:56.827+02:00  INFO 44872 --- [todo_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1530d0f2
+2024-09-13T17:29:56.829+02:00  INFO 44872 --- [todo_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T17:29:56.860+02:00  WARN 44872 --- [todo_app] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T17:29:57.625+02:00  INFO 44872 --- [todo_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T17:29:57.697+02:00  INFO 44872 --- [todo_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:29:58.114+02:00  INFO 44872 --- [todo_app] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T17:29:58.513+02:00  WARN 44872 --- [todo_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T17:29:58.819+02:00  INFO 44872 --- [todo_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-09-13T17:29:58.826+02:00  INFO 44872 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : Started TodoAppApplicationKt in 4.402 seconds (process running for 4.916)
+2024-09-13T17:30:05.247+02:00  INFO 44872 --- [todo_app] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T17:30:05.247+02:00  INFO 44872 --- [todo_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T17:30:05.249+02:00  INFO 44872 --- [todo_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-13T17:37:07.965+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:37:07.983+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T17:37:07.994+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
