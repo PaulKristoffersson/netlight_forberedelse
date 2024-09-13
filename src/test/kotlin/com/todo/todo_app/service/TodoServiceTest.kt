@@ -100,7 +100,7 @@ class TodoServiceTest {
         todo.done = false
         val expectedTodos = listOf(todo)
 
-        every { mockKRepository.queryAllCompletedTodos() } returns expectedTodos.toMutableList()
+        every { mockKRepository.queryAllUncompletedTodos() } returns expectedTodos.toMutableList()
         val actualList: List<TodoDto> = objectUnderTest.getAllUncompletedTodos()
 
         assertThat(actualList[0].done).isEqualTo(expectedTodos[0].done)
