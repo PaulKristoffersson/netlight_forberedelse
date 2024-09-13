@@ -27,4 +27,14 @@ class TodoRepositoryEmbeddedTest {
 
     }
 
+    @Test
+    @Sql("classpath:test-data.sql")
+    fun `Post saving all todos, check for the number of records in db`() {
+        val todos: List<Todo> = objectUnderTest.findAll()
+
+        assertThat(todos.size).isEqualTo(numberOfRecordsInTestData)
+    }
+
+
+
 }
