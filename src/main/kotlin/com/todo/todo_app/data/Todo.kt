@@ -15,10 +15,10 @@ class Todo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     val id: UUID? = null
 
-    @Column(name = "createdAt", nullable = false)
+    @Column(name = "created_at", nullable = false)
     val createdAt: LocalDateTime = LocalDateTime.now()
 
-    @Column(name = "updatedAt", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     var updatedAt: LocalDateTime = LocalDateTime.now()
 
     @NotBlank
