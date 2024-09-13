@@ -875,3 +875,34 @@ INSERT INTO todo (`id`, `createdAt`, `updatedAt`, `title`, `description`, `rank`
 2024-09-13T18:58:33.126+02:00  INFO 47689 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
 2024-09-13T18:58:33.128+02:00  INFO 47689 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
 2024-09-13T18:58:33.158+02:00  INFO 47689 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.302 seconds (process running for 3.464)
+2024-09-13T19:01:31.333+02:00  INFO 47858 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47858 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T19:01:31.335+02:00  INFO 47858 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T19:01:33.339+02:00  INFO 47858 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T19:01:33.339+02:00  INFO 47858 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T19:01:33.341+02:00  INFO 47858 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-13T19:01:33.372+02:00  INFO 47858 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.388 seconds (process running for 3.586)
+2024-09-13T19:05:02.468+02:00  INFO 47963 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47963 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T19:05:02.470+02:00  INFO 47963 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T19:05:04.391+02:00  INFO 47963 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T19:05:04.392+02:00  INFO 47963 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T19:05:04.394+02:00  INFO 47963 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-13T19:05:04.425+02:00  INFO 47963 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.298 seconds (process running for 3.398)
+2024-09-13T19:05:50.631+02:00  INFO 47992 --- [todo_app] [Test worker] c.todo.todo_app.TodoAppApplicationTests  : Starting TodoAppApplicationTests using Java 17.0.12 with PID 47992 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T19:05:50.633+02:00  INFO 47992 --- [todo_app] [Test worker] c.todo.todo_app.TodoAppApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T19:05:53.194+02:00  INFO 47992 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T19:05:53.308+02:00  INFO 47992 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2024-09-13T19:05:54.235+02:00  INFO 47992 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T19:05:54.375+02:00  INFO 47992 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T19:05:54.442+02:00  INFO 47992 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T19:05:55.095+02:00  INFO 47992 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T19:05:55.165+02:00  INFO 47992 --- [todo_app] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T19:05:55.563+02:00  INFO 47992 --- [todo_app] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-13T19:05:55.566+02:00  INFO 47992 --- [todo_app] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T19:05:55.622+02:00  WARN 47992 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T19:05:57.527+02:00  INFO 47992 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T19:05:57.620+02:00  INFO 47992 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T19:05:58.245+02:00  INFO 47992 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T19:05:59.069+02:00  WARN 47992 --- [todo_app] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T19:05:59.582+02:00  INFO 47992 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T19:05:59.584+02:00  INFO 47992 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T19:05:59.587+02:00  INFO 47992 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

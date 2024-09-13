@@ -2,6 +2,7 @@ package com.todo.todo_app.controller
 
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.todo.todo_app.data.model.TodoCreateRequest
 import com.todo.todo_app.data.model.TodoDto
 import com.todo.todo_app.data.model.TodoUpdateRequest
 import com.todo.todo_app.exception.TodoNotFoundException
@@ -114,5 +115,39 @@ class TodoControllerIntegrationTest(@Autowired private val mockMvc: MockMvc) {
         resultActions.andExpect(jsonPath("$.rank").value(dummyTodoDto.rank))
         resultActions.andExpect(jsonPath("$.done").value(dummyTodoDto.done))
 
+    }
+
+    @Test
+    fun `given create task request when task is created then check for the properties`() {
+        val request = TodoCreateRequest(
+            title =  dummyTodoDto.title,
+            description = dummyTodoDto.description,
+            done = dummyTodoDto.done,
+            rank = dummyTodoDto.rank
+        )
+
+        `when`(mockService.createTodo(request)).thenReturn(dummyTodoDto)
+        val resultActions: ResultActions = mockMvc.perform(
+            MockMvcRequestBuilders.post("/api/todos")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(mapper.writeValueAsString(request))
+        )
+
+        resultActions.andExpect(MockMvcResultMatchers.status().isOk)
+        resultActions.andExpect(content().contentType(MediaType.APPLICATION_JSON))
+        resultActions.andExpect(jsonPath("$.title").value(dummyTodoDto.title))
+        resultActions.andExpect(jsonPath("$.description").value(dummyTodoDto.description))
+        resultActions.andExpect(jsonPath("$.done").value(dummyTodoDto.done))
+    }
+
+    @Test
+    fun `given id for delete request, check for message after deletion` () {
+        val expectedMessage = "Todo with ID: $todoId was deleted."
+
+        `when`(mockService.deleteTodo(todoId)).thenReturn(expectedMessage)
+        val resultActions: ResultActions = mockMvc.perform(MockMvcRequestBuilders.delete("/api/todos/$todoId"))
+
+        resultActions.andExpect(MockMvcResultMatchers.status().isOk)
+        resultActions.andExpect(content().string(expectedMessage))
     }
 }
