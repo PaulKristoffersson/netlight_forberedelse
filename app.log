@@ -727,3 +727,91 @@ INSERT INTO todo (`id`, `createdAt`, `updatedAt`, `title`, `description`, `rank`
 2024-09-13T16:52:20.077+02:00  INFO 43554 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
 2024-09-13T16:52:20.476+02:00  INFO 43554 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.118 seconds (process running for 4.326)
 2024-09-13T16:52:21.108+02:00  INFO 43554 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:53:38.740+02:00  INFO 43677 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Starting TodoRepositoryEmbeddedTest using Java 17.0.12 with PID 43677 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T16:53:38.742+02:00  INFO 43677 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T16:53:39.083+02:00  INFO 43677 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T16:53:39.128+02:00  INFO 43677 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-09-13T16:53:39.172+02:00  INFO 43677 --- [todo_app] [Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-09-13T16:53:39.297+02:00  INFO 43677 --- [todo_app] [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f77431f4-78bd-4c33-b02e-5c60fa2b5f07;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-09-13T16:53:39.548+02:00  INFO 43677 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T16:53:39.609+02:00  INFO 43677 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T16:53:39.618+02:00  WARN 43677 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2024-09-13T16:53:39.645+02:00  INFO 43677 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T16:53:39.925+02:00  INFO 43677 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T16:53:39.969+02:00  WARN 43677 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T16:53:40.637+02:00  INFO 43677 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T16:53:40.686+02:00  INFO 43677 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:53:41.160+02:00  INFO 43677 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T16:53:41.578+02:00  INFO 43677 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.127 seconds (process running for 4.144)
+2024-09-13T16:53:42.306+02:00  INFO 43677 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:57:30.847+02:00  INFO 43799 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Starting TodoRepositoryEmbeddedTest using Java 17.0.12 with PID 43799 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T16:57:30.849+02:00  INFO 43799 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T16:57:31.161+02:00  INFO 43799 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T16:57:31.211+02:00  INFO 43799 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-09-13T16:57:31.259+02:00  INFO 43799 --- [todo_app] [Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-09-13T16:57:31.377+02:00  INFO 43799 --- [todo_app] [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:3c9f35b6-8471-404f-b95d-f0e3d2a21e84;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-09-13T16:57:31.646+02:00  INFO 43799 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T16:57:31.703+02:00  INFO 43799 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T16:57:31.712+02:00  WARN 43799 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2024-09-13T16:57:31.738+02:00  INFO 43799 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T16:57:32.017+02:00  INFO 43799 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T16:57:32.061+02:00  WARN 43799 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T16:57:32.743+02:00  INFO 43799 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T16:57:32.792+02:00  INFO 43799 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:57:33.254+02:00  INFO 43799 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T16:57:33.649+02:00  INFO 43799 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.09 seconds (process running for 4.336)
+2024-09-13T16:57:34.498+02:00  INFO 43799 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:59:25.286+02:00  INFO 43867 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Starting TodoRepositoryEmbeddedTest using Java 17.0.12 with PID 43867 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T16:59:25.288+02:00  INFO 43867 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T16:59:25.615+02:00  INFO 43867 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T16:59:25.664+02:00  INFO 43867 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2024-09-13T16:59:25.710+02:00  INFO 43867 --- [todo_app] [Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-09-13T16:59:25.836+02:00  INFO 43867 --- [todo_app] [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:3909c47b-f404-4ae0-845e-f58f060b7097;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-09-13T16:59:26.089+02:00  INFO 43867 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T16:59:26.145+02:00  INFO 43867 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T16:59:26.153+02:00  WARN 43867 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2024-09-13T16:59:26.183+02:00  INFO 43867 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T16:59:26.462+02:00  INFO 43867 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T16:59:26.516+02:00  WARN 43867 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T16:59:27.258+02:00  INFO 43867 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T16:59:27.310+02:00  INFO 43867 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:59:27.784+02:00  INFO 43867 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T16:59:28.231+02:00  INFO 43867 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.222 seconds (process running for 4.39)
+2024-09-13T16:59:28.869+02:00  INFO 43867 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:00:35.395+02:00  INFO 43922 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Starting TodoRepositoryEmbeddedTest using Java 17.0.12 with PID 43922 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T17:00:35.397+02:00  INFO 43922 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T17:00:35.744+02:00  INFO 43922 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T17:00:35.793+02:00  INFO 43922 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-09-13T17:00:35.838+02:00  INFO 43922 --- [todo_app] [Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-09-13T17:00:35.959+02:00  INFO 43922 --- [todo_app] [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:e023f32f-58d0-49a3-9f14-6ddc15f0e33b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-09-13T17:00:36.268+02:00  INFO 43922 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T17:00:36.328+02:00  INFO 43922 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T17:00:36.337+02:00  WARN 43922 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2024-09-13T17:00:36.366+02:00  INFO 43922 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T17:00:36.656+02:00  INFO 43922 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T17:00:36.699+02:00  WARN 43922 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T17:00:37.419+02:00  INFO 43922 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T17:00:37.468+02:00  INFO 43922 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:00:37.895+02:00  INFO 43922 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T17:00:38.343+02:00  INFO 43922 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.235 seconds (process running for 4.37)
+2024-09-13T17:00:39.046+02:00  INFO 43922 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:05:09.539+02:00  INFO 44068 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Starting TodoRepositoryEmbeddedTest using Java 17.0.12 with PID 44068 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T17:05:09.541+02:00  INFO 44068 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T17:05:09.994+02:00  INFO 44068 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T17:05:10.044+02:00  INFO 44068 --- [todo_app] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2024-09-13T17:05:10.088+02:00  INFO 44068 --- [todo_app] [Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-09-13T17:05:10.211+02:00  INFO 44068 --- [todo_app] [Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:dc796d28-bb74-47cf-828a-5039ddfb1de7;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-09-13T17:05:10.477+02:00  INFO 44068 --- [todo_app] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T17:05:10.537+02:00  INFO 44068 --- [todo_app] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T17:05:10.547+02:00  WARN 44068 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2024-09-13T17:05:10.584+02:00  INFO 44068 --- [todo_app] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T17:05:10.869+02:00  INFO 44068 --- [todo_app] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T17:05:10.922+02:00  WARN 44068 --- [todo_app] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T17:05:11.616+02:00  INFO 44068 --- [todo_app] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T17:05:11.663+02:00  INFO 44068 --- [todo_app] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:05:12.089+02:00  INFO 44068 --- [todo_app] [Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T17:05:12.566+02:00  INFO 44068 --- [todo_app] [Test worker] c.t.t.r.TodoRepositoryEmbeddedTest       : Started TodoRepositoryEmbeddedTest in 3.328 seconds (process running for 4.638)
+2024-09-13T17:05:13.181+02:00  INFO 44068 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:12:38.658+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T17:12:38.676+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T17:12:38.684+02:00  INFO 43303 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
