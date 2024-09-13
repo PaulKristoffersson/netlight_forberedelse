@@ -209,3 +209,34 @@ org.postgresql.util.PSQLException: ERROR: prepared statement "S_1" already exist
 2024-09-13T15:54:58.470+02:00  INFO 41542 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-13T15:54:58.473+02:00  INFO 41542 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-09-13T15:54:58.561+02:00  INFO 41542 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T15:55:49.079+02:00  INFO 41621 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : Starting TodoAppApplicationKt using Java 22.0.2 with PID 41621 (/Users/paulkristoffersson/IdeaProjects/todo_app/build/classes/kotlin/main started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T15:55:49.081+02:00  INFO 41621 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : The following 1 profile is active: "dev"
+2024-09-13T15:55:49.858+02:00  INFO 41621 --- [todo_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-13T15:55:49.911+02:00  INFO 41621 --- [todo_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2024-09-13T15:55:50.363+02:00  INFO 41621 --- [todo_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-09-13T15:55:50.379+02:00  INFO 41621 --- [todo_app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T15:55:50.379+02:00  INFO 41621 --- [todo_app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-13T15:55:50.427+02:00  INFO 41621 --- [todo_app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T15:55:50.428+02:00  INFO 41621 --- [todo_app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1302 ms
+2024-09-13T15:55:50.584+02:00  INFO 41621 --- [todo_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-13T15:55:50.647+02:00  INFO 41621 --- [todo_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-13T15:55:50.684+02:00  INFO 41621 --- [todo_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-13T15:55:51.001+02:00  INFO 41621 --- [todo_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-13T15:55:51.026+02:00  INFO 41621 --- [todo_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-13T15:55:51.191+02:00  INFO 41621 --- [todo_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e36bc01
+2024-09-13T15:55:51.192+02:00  INFO 41621 --- [todo_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-13T15:55:51.224+02:00  WARN 41621 --- [todo_app] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-13T15:55:52.042+02:00  INFO 41621 --- [todo_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-13T15:55:52.124+02:00  WARN 41621 --- [todo_app] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-09-13T15:55:52.124+02:00  WARN 41621 --- [todo_app] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_todo_title" of relation "todo" does not exist, skipping
+2024-09-13T15:55:52.134+02:00  INFO 41621 --- [todo_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T15:55:52.664+02:00  INFO 41621 --- [todo_app] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-13T15:55:53.080+02:00  WARN 41621 --- [todo_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-13T15:55:53.375+02:00  INFO 41621 --- [todo_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-09-13T15:55:53.381+02:00  INFO 41621 --- [todo_app] [main] com.todo.todo_app.TodoAppApplicationKt   : Started TodoAppApplicationKt in 4.704 seconds (process running for 5.351)
+2024-09-13T15:56:41.375+02:00  INFO 41621 --- [todo_app] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T15:56:41.375+02:00  INFO 41621 --- [todo_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T15:56:41.378+02:00  INFO 41621 --- [todo_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-13T16:02:22.624+02:00  INFO 41621 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-13T16:02:22.628+02:00  INFO 41621 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-13T16:02:22.630+02:00  INFO 41621 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
