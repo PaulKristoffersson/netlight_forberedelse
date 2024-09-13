@@ -844,3 +844,34 @@ INSERT INTO todo (`id`, `createdAt`, `updatedAt`, `title`, `description`, `rank`
 2024-09-13T17:37:07.965+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-13T17:37:07.983+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-09-13T17:37:07.994+02:00  INFO 44872 --- [todo_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-13T18:38:28.776+02:00  INFO 47054 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47054 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T18:38:28.778+02:00  INFO 47054 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T18:38:30.863+02:00  INFO 47054 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T18:38:30.864+02:00  INFO 47054 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T18:38:30.866+02:00  INFO 47054 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-13T18:38:30.898+02:00  INFO 47054 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.46 seconds (process running for 3.727)
+2024-09-13T18:43:17.944+02:00  INFO 47249 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47249 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T18:43:17.945+02:00  INFO 47249 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T18:43:20.534+02:00  INFO 47249 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T18:43:20.535+02:00  INFO 47249 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T18:43:20.539+02:00  INFO 47249 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-09-13T18:43:20.589+02:00  INFO 47249 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.992 seconds (process running for 4.239)
+2024-09-13T18:44:28.294+02:00  INFO 47302 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47302 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T18:44:28.296+02:00  INFO 47302 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T18:44:30.253+02:00  INFO 47302 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T18:44:30.254+02:00  INFO 47302 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T18:44:30.255+02:00  INFO 47302 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-13T18:44:30.285+02:00  INFO 47302 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.383 seconds (process running for 3.657)
+2024-09-13T18:44:30.436+02:00  WARN 47302 --- [todo_app] [Test worker] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: hej]
+2024-09-13T18:56:13.764+02:00  INFO 47613 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47613 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T18:56:13.766+02:00  INFO 47613 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T18:56:15.734+02:00  INFO 47613 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T18:56:15.735+02:00  INFO 47613 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T18:56:15.736+02:00  INFO 47613 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-13T18:56:15.766+02:00  INFO 47613 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.34 seconds (process running for 3.527)
+2024-09-13T18:58:31.206+02:00  INFO 47689 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Starting TodoControllerIntegrationTest using Java 17.0.12 with PID 47689 (started by paulkristoffersson in /Users/paulkristoffersson/IdeaProjects/todo_app)
+2024-09-13T18:58:31.208+02:00  INFO 47689 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T18:58:33.125+02:00  INFO 47689 --- [todo_app] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-13T18:58:33.126+02:00  INFO 47689 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-13T18:58:33.128+02:00  INFO 47689 --- [todo_app] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-09-13T18:58:33.158+02:00  INFO 47689 --- [todo_app] [Test worker] c.t.t.c.TodoControllerIntegrationTest    : Started TodoControllerIntegrationTest in 2.302 seconds (process running for 3.464)
